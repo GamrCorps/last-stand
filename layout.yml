@@ -1,0 +1,128 @@
+# The "cut line", without rounded corners
+cut:
+  x: 37.5
+  y: 37.5
+  radius: 16
+  width: 750
+  height: 1050
+
+# The "safe zone" as defined by TheGameCrafter poker cards
+safe:
+  x: 75
+  y: 75
+  width: 675
+  height: 975
+  dash: 3 3
+  
+#offset:
+#  x: 0.125in
+#  y: 0.125in
+#
+#base_width:
+#  width: 0.125in
+
+offset:
+  x: 0
+  y: 0
+
+base_width:
+  width: 0
+  
+name_rect:
+  extends: base_width
+  width: += 0.75in
+  stroke_width: 0
+  
+name_text:
+  extends: offset
+  x: += 0.125in
+  y: += 3.375in
+  height: 0.5in
+  width: 2.625in
+  align: right
+  font_size: 25
+  valign: middle
+  
+type_icon:
+  extends: offset
+  x: += 0.125in
+  y: += 0.625in
+  
+text_area:
+  extends: offset
+  x: += 0.875in
+  y: += 0.125in
+  width: 1.5in
+  height: 2.75in
+  align: center
+  
+desc_text:
+  extends: text_area
+  valign: top
+  font: Arial 11
+  
+use_text:
+  extends: text_area
+  valign: bottom
+  font: Arial italic 11
+  
+icon_slot:
+  extends: offset
+  width: 0.375in
+  height: 0.375in
+  x: += 1.4375in
+  y: += 3in
+  
+icon_slot_1:
+  extends: icon_slot
+  x: -= 0.5625in
+  
+icon_slot_2:
+  extends: icon_slot
+  x: -= 0.28125in
+  
+icon_slot_3:
+  extends: icon_slot
+  
+icon_slot_4:
+  extends: icon_slot
+  x: += 0.28125in
+  
+icon_slot_5:
+  extends: icon_slot
+  x: += 0.5625in
+  
+bg_Character:
+  color: "#efec43"
+  
+name_rect_Character:
+  extends: name_rect
+  fill_color: "#d6d33e"
+  
+bg_Offense:
+  color: "#ffbc3f"
+  
+name_rect_Offense:
+  extends: name_rect
+  fill_color: "#e2a83b"
+  
+bg_Defense:
+  color: "#42b6f4"
+  
+name_rect_Defense:
+  extends: name_rect
+  fill_color: "#3ba3db"
+  
+bg_Sabotage:
+  color: "#a671fc"
+  
+name_rect_Sabotage:
+  extends: name_rect
+  fill_color: "#8b5ed6"
+  
+bg_Chaos:
+  color: "#4df95e"
+  
+name_rect_Chaos:
+  extends: name_rect
+  fill_color: "#43d851"
